@@ -139,7 +139,7 @@ func CSVToJSON(csvData []byte) ([]byte, error) {
 func flattenJSON(obj interface{}, rows *[][]string, headers *[]string, headerSet map[string]bool, path []string) {
 	switch v := obj.(type) {
 	case map[string]interface{}:
-		row := make([]string, len(*headers))
+		// row := make([]string, len(*headers))
 		rowMap := make(map[string]string)
 
 		for key, value := range v {

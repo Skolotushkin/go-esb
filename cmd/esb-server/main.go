@@ -28,7 +28,7 @@ func main() {
 	// Инициализация репозиториев
 	systemRepo := repository.NewSystemRepository(db)
 	routeRepo := repository.NewRouteRepository(db)
-	threadRepo := repository.NewThreadRepository(db)
+	//threadRepo := repository.NewThreadRepository(db)
 	threadRouteRepo := repository.NewThreadRouteRepository(db)
 	connectionRepo := repository.NewConnectionRepository(db)
 

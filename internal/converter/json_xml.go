@@ -52,7 +52,7 @@ func convertToXML(obj interface{}, rootName string) interface{} {
 	switch v := obj.(type) {
 	case map[string]interface{}:
 		elements := []xml.Name{}
-		for key, value := range v {
+		for key, _ := range v {
 			xmlElem := xml.Name{Local: sanitizeXMLName(key)}
 			elements = append(elements, xmlElem)
 		}
